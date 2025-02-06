@@ -99,4 +99,17 @@
   "cli": {
     "analytics": "5acce1b8-0fd1-418f-9ef0-d48ea41d3c7d"
   }
+
+  "test": {
+  "builder": "@angular-devkit/build-angular:karma",
+  "options": {
+    "main": "src/test.ts",
+    "polyfills": "src/polyfills.ts",
+    "tsConfig": "src/tsconfig.spec.json",
+    "karmaConfig": "src/karma.conf.js", // Chemin vers le fichier Karma
+    "styles": ["src/styles.css"],
+    "scripts": [],
+    "assets": ["src/favicon.ico", "src/assets"]
+  }
+}
 }
