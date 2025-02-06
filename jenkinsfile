@@ -24,3 +24,18 @@ sh('npm run build-dev')
 }
 }
 }
+pipeline {
+  agent any
+  environment {
+    CHROME_BIN = '/usr/bin/google-chrome'
+  }
+  stages {
+    stage('Unit Test') {
+      steps {
+        script {
+          sh 'npm test'
+        }
+      }
+    }
+  }
+}
