@@ -99,4 +99,10 @@
   "cli": {
     "analytics": "5acce1b8-0fd1-418f-9ef0-d48ea41d3c7d"
   }
+
+  {
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  }
+}
 }
